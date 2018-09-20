@@ -42,7 +42,7 @@ class SwipeActionButton: UIButton {
         self.init(frame: .zero)
 
         contentHorizontalAlignment = .center
-        
+        self.layer.cornerRadius = 5
         tintColor = action.textColor ?? .white
         let highlightedTextColor = action.highlightedTextColor ?? tintColor
         highlightedBackgroundColor = action.highlightedBackgroundColor ?? UIColor.black.withAlphaComponent(0.1)
